@@ -14,7 +14,8 @@ namespace Repository2025.Data.Helpers
     {
         private static DataHelper _instance;
         private SqlConnection _connection;
-
+        private string _tableName;
+        //singleton patron
         private DataHelper()
         {
             _connection = new SqlConnection(Properties.Resources.CadenaConexionLocal);
